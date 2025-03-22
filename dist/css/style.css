@@ -239,6 +239,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, div, input, button, textarea, select,
 .gp-dashboard .chart-card .card {
   padding: 24px 32px 16px;
   margin-bottom: 0;
+  width: 100%;
 }
 
 
