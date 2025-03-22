@@ -1,0 +1,391 @@
+body {
+  color: #333333;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, a, span, div, input, button, textarea, select, 
+.navbar, .sidebar, .main-header, .content-wrapper, .card, .btn, .form-control, .nav-link {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+  padding: 0 20px;
+}
+
+.row {
+  margin: 0 -10px;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  padding: 0 10px;
+}
+
+.gp-dashboard h5 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+
+/* Навбар */
+.gp-dashboard .main-header {
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 40px rgba(39, 32, 120, 0.1);
+  border: none;
+}
+
+.gp-dashboard .main-header .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  height: auto;
+  color: #61748F;
+}
+
+.gp-dashboard .main-header .navbar-nav:last-child {
+  gap: 20px;
+}
+
+.gp-dashboard .navbar-nav .dropdown-menu {
+  box-shadow: 0 0 20px rgba(89, 102, 122, 0.1);
+  border: none;
+  top: 175%;
+}
+.gp-dashboard .navbar-nav .dropdown-item {
+  padding: 12px 24px;
+  color: #61748F;
+}
+
+.gp-dashboard .navbar-nav .dropdown-item:focus, 
+.gp-dashboard .navbar-nav .dropdown-item:hover {
+  background-color: #F4FBFE;
+}
+
+.gp-dashboard .navbar-nav .dropdown-item:first-child {
+  padding-top: 20px;
+}
+
+.gp-dashboard .navbar-nav .dropdown-item:last-child {
+  padding-bottom: 20px;
+}
+
+/* Боковое меню */
+.gp-dashboard .sidebar {
+  height: calc(100vh - 125px);
+  overflow-y: auto;
+}
+
+.gp-dashboard .brand-link {
+  padding: 16px 54px;
+}
+
+.gp-dashboard .sidebar-dark-primary {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  float: none;
+  background-color: #05365A;
+}
+
+.gp-dashboard .main-sidebar, .main-sidebar::before {
+  width: 270px;
+}
+
+.gp-dashboard [class*="sidebar-dark"] .brand-link {
+  width: 100%;
+  height: 125px;
+  border: none;
+}
+
+.sidebar-collapse .gp-dashboard .brand-link {
+  padding: 12px 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar-collapse .gp-dashboard .logo-xs {
+  width: 30px;
+}
+
+.gp-dashboard .sidebar {
+  margin-top: 40px;
+  padding: 0;
+}
+
+.gp-dashboard .nav-sidebar .nav-treeview .nav-item .nav-link {
+  padding: 8px 24px 8px 52px;
+}
+
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+.gp-dashboard .sidebar .nav-link p {
+  margin-left: 8px;
+}
+
+.gp-dashboard .region-item {
+  margin-top: 40px;
+}
+
+#geo-regions .nav-link,
+#demand-regions .nav-link{
+  padding-left: 52px;
+}
+
+.gp-dashboard .nav-sidebar .nav-item > .nav-link,
+.gp-dashboard .nav-sidebar .nav-item.script-info {
+  width: 100%;
+  padding: 12px 24px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.gp-dashboard .nav-sidebar .nav-item.script-info {
+  padding-left: 32px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.gp-dashboard .nav-sidebar .nav-item.script-info span:last-child {
+  margin-left: 8px;
+  font-weight: 300;
+}
+
+.sidebar-collapse .nav-item.script-info {
+  display: none;
+}
+
+.sidebar-collapse .main-sidebar:hover .nav-item.script-info {
+  display: flex;
+  padding-left: 24px;
+} 
+
+
+/* Стили для кастомных чекбоксов */
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-check-input {
+  position: absolute;
+  bottom: 2px;
+  width: 17px;
+  height: 17px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.form-check-input:checked {
+  background-color: #0099E6;
+}
+
+.form-check-input:checked::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 17px;
+  height: 17px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 17 17' fill='none'%3E%3Cpath d='M12.2209 6.45355L7.71311 10.9614C7.43651 11.238 6.98799 11.238 6.71137 10.9614L4.95833 9.20833' stroke='white' stroke-width='1.0625' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(-50%, -50%);
+}
+
+.form-check-label {
+  padding-left: 8px;
+}
+
+/* Cкроллбар в боковом меню */
+.sidebar {
+  height: calc(100vh - 125px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #9EAFBB transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #9EAFBB;
+}
+
+
+/* Основной контент */
+.gp-dashboard .content-wrapper {
+  padding-top: 40px;
+  background-color: #F3F4F7;
+}
+
+
+/* Карточки с графиком */
+.gp-dashboard .chart-card {
+  margin-bottom: 20px;
+}
+
+.gp-dashboard .chart-card .card {
+  padding: 24px 32px 16px;
+  margin-bottom: 0;
+}
+
+
+/* Карточка c таймлайном */
+.gp-dashboard .card {
+  padding: 0;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0px 9px 20px rgba(46, 35, 94, 0.07);
+}
+
+.gp-dashboard .card-header {
+  padding: 0;
+  border: none;
+}
+
+.gp-dashboard .card-body {
+  padding: 24px 20px 32px;
+}
+
+.gp-dashboard .timeline-card-item {
+  margin-bottom: 0;
+  border-radius: 8px;
+}
+
+.gp-dashboard .timeline-card-item .card-header {
+  padding: 20px;
+  color: #ffffff;
+}
+
+.gp-dashboard .item-1 .card-header {
+  background-color: #1FA8E3;
+}
+
+.gp-dashboard .item-2 .card-header {
+  background-color: #0099E6;
+}
+
+.gp-dashboard .item-3 .card-header {
+  background-color: #007AC2;
+}
+
+.gp-dashboard .item-4 .card-header {
+  background-color: #005A9C;
+}
+
+.gp-dashboard .timeline-card-item .card-body {
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+
+.gp-dashboard .timeline-card-item .card-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.gp-dashboard .timeline-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.gp-dashboard .timeline-card-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.gp-dashboard .timeline-card-list .label {
+  font-weight: 600;
+}
+
+
+/* Табы в карточке */
+.gp-dashboard .card-header .nav-pills .nav-link {
+  width: 170px;
+  padding: 12px 0;
+  text-align: center;
+  border-right: 2px solid #ffffff;
+  border-radius: 0;
+  background-color: #DEE6ED;
+  color: #61748F;
+  font-weight: 500;
+}
+
+.gp-dashboard .nav-pills .nav-link.active,
+.gp-dashboard .nav-pills .show > .nav-link {
+  background-color: #0099E6;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.gp-dashboard .card-header .nav-pills .nav-item:first-child .nav-link {
+  border-top-left-radius: 16px;
+}
+
+.gp-dashboard .card-header .nav-pills .nav-item:last-child .nav-link {
+  border-bottom-right-radius: 8px;
+}
+
+
+
+@media (min-width: 992px) {
+  body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-wrapper,
+  body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-footer,
+  body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-header {
+    margin-left: 270px;
+    transition: margin-left 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 992px) {
+  .gp-dashboard .main-sidebar, .main-sidebar::before {
+    width: 250px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .chart-card .row,
+  .timeline-card .row {
+    row-gap: 20px;
+  }
+
+  .chart-card .col-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .chart-card .col-4:first-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .chart-card .card {
+    width: 100%;
+  }
+
+  .chart-card .col-4:first-child .card img {
+    max-width: 60%;
+    align-self: center;
+  }
+
+  .timeline-card .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}

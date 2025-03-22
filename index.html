@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Газпром департамент 623</title>
+  <link rel="icon" href="dist/images/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="dist/images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="512x512" href="dist/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper gp-dashboard">
+      <!-- Навбар -->
+      <nav class="main-header navbar navbar-expand">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+              <span>Иван Иванов</span> 
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12.2338 14.6667C9.24327 14.6667 6.67085 15.9671 5.52955 18.1027C4.8354 19.4016 6.09435 20.6667 7.56711 20.6667H16.9004C18.3732 20.6667 19.6322 19.4016 18.938 18.1027C17.7967 15.9671 15.2243 14.6667 12.2338 14.6667Z" stroke="#61748F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.5671 7.33333C15.5671 9.17428 14.0747 10.6667 12.2337 10.6667C10.3928 10.6667 8.90039 9.17428 8.90039 7.33333C8.90039 5.49239 10.3928 4 12.2337 4C14.0747 4 15.5671 5.49239 15.5671 7.33333Z" stroke="#61748F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <a href="#" class="dropdown-item">
+                Мой профиль
+              </a>
+              <a href="#" class="dropdown-item">
+                Выйти
+              </a>
+            </div>
+          </li>
+          <!-- Иконка настроек -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M19.7668 6.66821C19.5706 6.3504 19.2484 6.11766 18.8709 6.02275C18.4925 5.92783 18.0903 5.97775 17.7517 6.16126C17.189 6.46568 16.5106 6.46533 15.9483 6.16035L15.3655 5.84433C14.838 5.55826 14.5095 5.00633 14.5095 4.40625C14.5095 3.64125 13.851 3 13.0367 3H10.9632C10.1489 3 9.49037 3.64125 9.49037 4.40625C9.49037 5.00637 9.16193 5.55836 8.63449 5.84464L8.05245 6.16057C7.49008 6.46581 6.81152 6.46607 6.24892 6.16126C5.91032 5.97775 5.50728 5.92782 5.12898 6.02275C4.75141 6.11767 4.4293 6.3504 4.23301 6.66821L3.19772 8.3529C3.0022 8.67071 2.949 9.04899 3.05014 9.40336C3.15127 9.75845 3.39848 10.0608 3.73709 10.2443C4.29109 10.545 4.63616 11.1248 4.63635 11.7551L4.63649 12.2449C4.63668 12.8752 4.29179 13.455 3.73784 13.7557C3.39923 13.9399 3.15126 14.2416 3.05014 14.5959C2.94901 14.951 3.00219 15.3293 3.19772 15.6471L4.23451 17.3318C4.43002 17.6496 4.75215 17.8823 5.12973 17.9773C5.50805 18.0722 5.91032 18.0223 6.24967 17.8387C6.81235 17.5343 7.4907 17.5347 8.05306 17.8397L8.63371 18.1546C9.16159 18.4409 9.49036 18.9932 9.49036 19.5938C9.49036 20.3588 10.1488 21 10.9632 21H13.0361C13.8511 21 14.5089 20.3588 14.5089 19.5938C14.5093 18.9932 14.8384 18.441 15.3663 18.1547L15.9476 17.8396C16.51 17.5346 17.1884 17.5343 17.7511 17.8387C18.0904 18.0222 18.4927 18.0722 18.8703 17.9773C19.2486 17.8823 19.5707 17.6496 19.7662 17.3318L20.8023 15.6471C20.9978 15.3293 21.051 14.951 20.9499 14.5966C20.8487 14.2416 20.6015 13.9392 20.2629 13.7557C19.7089 13.455 19.364 12.8752 19.364 12.2449V11.7551C19.364 11.1248 19.7089 10.545 20.2629 10.2443C20.6015 10.0601 20.8487 9.75843 20.9499 9.40405C21.051 9.04896 20.9978 8.67069 20.8023 8.35288L19.7668 6.66821Z" stroke="#61748F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="#61748F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <a href="#" class="dropdown-item">
+                Настройки профиля
+              </a>
+              <a href="#" class="dropdown-item">
+                Безопасность
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+  
+      <!-- Боковая панель -->
+      <aside class="main-sidebar sidebar-dark-primary">
+        <a href="index.html" class="brand-link">
+          <img src="dist/images/logo_xs.svg" alt="Газпром департамент 623" class="logo-xs">
+          <img src="dist/images/logo.svg" alt="Газпром департамент 623" class="logo-xl">
+        </a>
+        <div class="sidebar">
+          <nav>
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link active">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M15.8333 15V8.19035C15.8333 7.74833 15.6495 7.33455 15.3075 7.05443C14.409 6.31829 12.5807 4.85518 11.1257 3.55471C10.4764 2.97431 9.48942 2.93764 8.82817 3.50442L4.74868 7.00113C4.37927 7.31776 4.16667 7.78001 4.16667 8.26655V15C4.16667 15.9205 4.91286 16.6667 5.83333 16.6667H6.25C7.17047 16.6667 7.91667 15.9205 7.91667 15V13.3333C7.91667 12.4128 8.66283 11.6667 9.58333 11.6667H10.4167C11.3372 11.6667 12.0833 12.4128 12.0833 13.3333V15C12.0833 15.9205 12.8295 16.6667 13.75 16.6667H14.1667C15.0872 16.6667 15.8333 15.9205 15.8333 15Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  <p>Главная</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M8.33333 10.8333V15M11.6667 8.33333V15M15 5V15M5 11.6667V15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  <p>
+                    Текущее состояние
+                    <i class="right">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M15.6667 9L10.3333 14.3333L5 9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </i>
+                  </p>
+                </a>
+    
+                <ul class="nav nav-treeview" style="display: none;">
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <p>Все этапы</p>
+                      </a>
+                    </li><li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <p>ТЭО</p>
+                      </a>
+                    </li><li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <p>Геол. изучение</p>
+                      </a>
+                    </li><li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <p>Лицензирование</p>
+                      </a>
+                    </li><li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <p>Проектная документация</p>
+                      </a>
+                    </li><li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <p>ОПР</p>
+                      </a>
+                  </ul>
+                  
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M3.75 17.5H6.25M6.25 17.5H14.5833M6.25 17.5V13.75M17.0833 17.5H14.5833M14.5833 17.5C14.5833 16.1365 14.5189 14.8894 14.4006 13.75M6.25 13.75V9.99999M6.25 13.75H14.4006M14.4006 13.75C14.2543 12.3412 14.0253 11.0967 13.7336 9.99999M6.25 6.24999V4.00833C6.25 3.15208 6.91327 2.41654 7.74643 2.61406C9.8185 3.10528 12.4167 5.04918 13.7336 9.99999M6.25 6.24999H14.1667M6.25 6.24999V9.99999M13.7336 9.99999H6.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  <p>Пром. разработка</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M5 11.6667L15 3.33334M15 3.33334H11.9526M15 3.33334V6.38072M15 9.16668V16.6667M11.6667 10.8333V16.6667M8.33333 13.3333V16.6667M5 15.8333V16.6667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  <p>Динамика и управление</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M9.99983 12.5C7.23844 12.5 4.99987 10.2614 4.99987 7.5C4.99987 4.73857 7.23844 2.5 9.99983 2.5C12.7613 2.5 14.9998 4.73857 14.9998 7.5C14.9998 10.2614 12.7613 12.5 9.99983 12.5ZM9.99983 12.5L13.0347 17.3567C13.3759 17.9028 14.2205 17.6258 14.172 16.9838L14.0492 15.358C14.0118 14.8625 14.546 14.5287 14.9749 14.7795L16.3823 15.6026C16.9381 15.9277 17.5573 15.29 17.2161 14.744L14.2978 10.0564M9.99983 12.5L6.96502 17.3567C6.62381 17.9028 5.77927 17.6258 5.82777 16.9838L5.95055 15.358C5.98797 14.8625 5.45377 14.5287 5.02484 14.7795L3.61742 15.6026C3.06161 15.9277 2.44242 15.29 2.78362 14.744L5.70191 10.0564M11.6665 7.5C11.6665 8.4205 10.9203 9.16667 9.99983 9.16667C9.07942 9.16667 8.3332 8.4205 8.3332 7.5C8.3332 6.57952 9.07942 5.83333 9.99983 5.83333C10.9203 5.83333 11.6665 6.57952 11.6665 7.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  <p>Качество запасов</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M12.5 16.6667H4.16667C3.24619 16.6667 2.5 15.9205 2.5 15V5.00001C2.5 4.07954 3.24619 3.33334 4.16667 3.33334H7.10207C7.77546 3.33334 8.38267 3.73857 8.64108 4.3604L8.73983 4.59795C8.99825 5.21979 9.6055 5.62501 10.2789 5.62501H14.375C15.1804 5.62501 15.8333 6.27793 15.8333 7.08334M4.66201 16.6667H14.5485C15.3057 16.6667 15.9677 16.1563 16.1603 15.4242L17.6416 9.79543C17.7806 9.26701 17.3821 8.75001 16.8357 8.75001H5.86815C5.11103 8.75001 4.44904 9.26034 4.25636 9.99251L3.05022 14.5758C2.77211 15.6327 3.56922 16.6667 4.66201 16.6667Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  <p>Данные по&nbsp;проектам</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M12.5 17.5H4.16667C3.24619 17.5 2.5 16.7538 2.5 15.8333V7.50001M15 15H6.66667C5.74619 15 5 14.2538 5 13.3333V5.00001M9.16667 2.49991H15.8333C16.7538 2.49991 17.5 3.2461 17.5 4.16657V10.8333C17.5 11.7537 16.7538 12.4999 15.8333 12.4999H9.16667C8.24619 12.4999 7.5 11.7537 7.5 10.8333V4.16657C7.5 3.2461 8.24619 2.49991 9.16667 2.49991Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  <p>Сценарии</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M12.0833 5.00001L4.16667 4.99999M12.0833 5.00001C12.0833 6.1506 13.0161 7.08332 14.1667 7.08332C15.3172 7.08332 16.25 6.15058 16.25 4.99999C16.25 3.8494 15.3172 2.91666 14.1667 2.91666C13.0161 2.91666 12.0833 3.84941 12.0833 5.00001ZM15.8333 9.99999H7.91667M7.91667 9.99999C7.91667 11.1506 6.98392 12.0833 5.83333 12.0833C4.68274 12.0833 3.75 11.1506 3.75 9.99999C3.75 8.84941 4.68274 7.91666 5.83333 7.91666C6.98392 7.91666 7.91667 8.84941 7.91667 9.99999ZM12.0833 15H4.16667M12.0833 15C12.0833 16.1506 13.0161 17.0833 14.1667 17.0833C15.3172 17.0833 16.25 16.1506 16.25 15C16.25 13.8494 15.3172 12.9167 14.1667 12.9167C13.0161 12.9167 12.0833 13.8494 12.0833 15Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  <p>Сравнение сценариев</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M14.5833 5.41669V2.91669M14.5833 5.41669V7.91669M14.5833 5.41669H12.0833M14.5833 5.41669H17.0833M4.58333 17.0834H6.25C7.17047 17.0834 7.91667 16.3372 7.91667 15.4167V13.75C7.91667 12.8295 7.17047 12.0834 6.25 12.0834H4.58333C3.66286 12.0834 2.91667 12.8295 2.91667 13.75V15.4167C2.91667 16.3372 3.66286 17.0834 4.58333 17.0834ZM4.58333 7.91669H6.25C7.17047 7.91669 7.91667 7.1705 7.91667 6.25002V4.58335C7.91667 3.66288 7.17047 2.91669 6.25 2.91669H4.58333C3.66286 2.91669 2.91667 3.66288 2.91667 4.58335V6.25002C2.91667 7.1705 3.66286 7.91669 4.58333 7.91669ZM13.75 17.0834H15.4167C16.3372 17.0834 17.0833 16.3372 17.0833 15.4167V13.75C17.0833 12.8295 16.3372 12.0834 15.4167 12.0834H13.75C12.8295 12.0834 12.0833 12.8295 12.0833 13.75V15.4167C12.0833 16.3372 12.8295 17.0834 13.75 17.0834Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  <p>Администрирование</p>
+                </a>
+              </li>
+              <li class="nav-item region-item">
+                <a href="#" class="nav-link">
+                  <p>
+                    Географический регион
+                    <i class="right">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M15.6667 9L10.3333 14.3333L5 9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview" style="display: none;" id="geo-regions">
+                  <li class="nav-item">
+                    <div class="nav-link">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="select-all-geo">
+                        <label class="form-check-label" for="select-all-geo">Все регионы</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="nav-link">
+                      <div class="form-check">
+                        <input class="form-check-input region-checkbox" type="checkbox" id="region-rf">
+                        <label class="form-check-label" for="region-rf">РФ</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="nav-link">
+                      <div class="form-check">
+                        <input class="form-check-input region-checkbox" type="checkbox" id="region-sibir">
+                        <label class="form-check-label" for="region-sibir">Западная Сибирь</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="nav-link">
+                      <div class="form-check">
+                        <input class="form-check-input region-checkbox" type="checkbox" id="region-vs">
+                        <label class="form-check-label" for="region-vs">ВС и ДВ</label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <p>
+                    Регион спроса
+                    <i class="right">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M15.6667 9L10.3333 14.3333L5 9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview" style="display: none;" id="demand-regions">
+                  <li class="nav-item">
+                    <div class="nav-link">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="select-all-region">
+                        <label class="form-check-label" for="select-all-region">Все регионы</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="nav-link">
+                      <div class="form-check">
+                        <input class="form-check-input region-checkbox" type="checkbox" id="region-esg">
+                        <label class="form-check-label" for="region-esg">ЕСГ</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="nav-link">
+                      <div class="form-check">
+                        <input class="form-check-input region-checkbox" type="checkbox" id="region-sila">
+                        <label class="form-check-label" for="region-sila">Сила Сибири - 2</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="nav-link">
+                      <div class="form-check">
+                        <input class="form-check-input region-checkbox" type="checkbox" id="region-sila2">
+                        <label class="form-check-label" for="region-sila2">Сила Сибири - 2</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="nav-link">
+                      <div class="form-check">
+                        <input class="form-check-input region-checkbox" type="checkbox" id="region-shv">
+                        <label class="form-check-label" for="region-shv">СХВ</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="nav-link">
+                      <div class="form-check">
+                        <input class="form-check-input region-checkbox" type="checkbox" id="region-kamchatka">
+                        <label class="form-check-label" for="region-kamchatka">Какмчатка</label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item script-info">
+                <span>Сценарий:</span><span>Импорт</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+  
+      <!-- Основной контент -->
+      <div class="content-wrapper">
+
+        <section class="chart-card">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-4 d-flex align-items-stretch">
+                <div class="card ">
+                  <h5>Подготовленность запасов йода</h5>
+                  <img src="dist/images/chart_1.svg" alt="График 1">
+                </div>
+              </div>
+              <div class="col-4 d-flex align-items-stretch">
+                <div class="card ">
+                  <h5>Запасы йода по&nbsp;регионам</h5>
+                  <img src="dist/images/chart_2.svg" alt="График 2">
+                </div>
+              </div>
+              <div class="col-4 d-flex align-items-stretch">
+                <div class="card ">
+                  <h5>(Остаточные) запасы газа по&nbsp;регионам</h5>
+                  <img src="dist/images/chart_3.svg" alt="График 3">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="timeline-card">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <ul class="nav nav-pills" id="periodTabs" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="tab-2026" data-toggle="pill" href="#content-2026" role="tab" aria-controls="content-2026" aria-selected="true">
+                          2026
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="tab-2027-2029" data-toggle="pill" href="#content-2027-2029" role="tab" aria-controls="content-2027-2029" aria-selected="false">
+                          2027-2029
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="tab-2029-2040" data-toggle="pill" href="#content-2029-2040" role="tab" aria-controls="content-2029-2040" aria-selected="false">
+                          2029-2040
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content" id="periodTabsContent">
+                      <!-- Контент для 2026 -->
+                      <div class="tab-pane fade show active" id="content-2026" role="tabpanel" aria-labelledby="tab-2026">
+                        <h5>Информация за 2026 год</h5>
+                        <div class="row">
+                          <div class="col-md-3">
+                            <div class="card timeline-card-item item-1">
+                              <div class="card-header">
+                                <h6 class="card-title">Российская Федерация</h6>
+                              </div>
+                              <div class="card-body">
+                                <ul class="list-unstyled timeline-card-list">
+                                  <li>
+                                    <span class="label">Объем производства:</span>
+                                    <span>1290,1 млн т</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Объем добычи углеводородов:</span>
+                                    <span>1290 млрд м³</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Затраты на&nbsp;геол. изучение:</span>
+                                    <span>305 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Капитальные затраты:</span>
+                                    <span>268 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Ожидаемый ЧДД по&nbsp;портфелю:</span>
+                                    <span>-1 522,5 млн руб.</span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-3">
+                            <div class="card timeline-card-item item-2">
+                              <div class="card-header">
+                                <h6 class="card-title">Западная Сибирь</h6>
+                              </div>
+                              <div class="card-body">
+                                <ul class="list-unstyled timeline-card-list"> 
+                                  <li>
+                                    <span class="label">Объем производства:</span>
+                                    <span>1290,1 млн т</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Объем добычи углеводородов:</span>
+                                    <span>1290 млрд м³</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Затраты на геол. изучение:</span>
+                                    <span>305 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Капитальные затраты:</span>
+                                    <span>268 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Ожидаемый ЧДД по портфелю:</span>
+                                    <span>-1 522,5 млн руб.</span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-3">
+                            <div class="card timeline-card-item item-3">
+                              <div class="card-header">
+                                <h6 class="card-title">ВС и ДВ</h6>
+                              </div>
+                              <div class="card-body">
+                                <ul class="list-unstyled timeline-card-list">
+                                  <li>
+                                    <span class="label">Объем производства:</span>
+                                    <span>1290,1 млн т</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Объем добычи углеводородов:</span>
+                                    <span>1290 млрд м³</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Затраты на геол. изучение:</span>
+                                    <span>305 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Капитальные затраты:</span>
+                                    <span>268 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Ожидаемый ЧДД по&nbsp;портфелю:</span>
+                                    <span>-1 522,5 млн руб.</span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-3">
+                            <div class="card timeline-card-item item-4">
+                              <div class="card-header">
+                                <h6 class="card-title">Европейская часть РФ</h6>
+                              </div>
+                              <div class="card-body">
+                                <ul class="list-unstyled timeline-card-list">
+                                  <li>
+                                    <span class="label">Объем производства:</span>
+                                    <span>1290,1 млн т</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Объем добычи углеводородов:</span>
+                                    <span>1290 млрд м³</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Затраты на геол. изучение:</span>
+                                    <span>305 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Капитальные затраты:</span>
+                                    <span>268 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Ожидаемый ЧДД по&nbsp;портфелю:</span>
+                                    <span>-1 522,5 млн руб.</span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Контент для 2027-2029 -->
+                      <div class="tab-pane fade" id="content-2027-2029" role="tabpanel" aria-labelledby="tab-2027-2029">
+                        <h5>Информация за 2027-2029 годы</h5>
+                        <div class="row">
+                          <div class="col-md-3">
+                            <div class="card timeline-card-item item-1">
+                              <div class="card-header">
+                                <h6 class="card-title">Российская Федерация</h6>
+                              </div>
+                              <div class="card-body">
+                                <ul class="list-unstyled timeline-card-list">
+                                  <li>
+                                    <span class="label">Объем производства:</span>
+                                    <span>1290,1 млн т</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Объем добычи углеводородов:</span>
+                                    <span>1290 млрд м³</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Затраты на геол. изучение:</span>
+                                    <span>305 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Капитальные затраты:</span>
+                                    <span>268 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Ожидаемый ЧДД по&nbsp;портфелю:</span>
+                                    <span>-1 522,5 млн руб.</span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-3">
+                            <div class="card timeline-card-item item-2">
+                              <div class="card-header">
+                                <h6 class="card-title">Западная Сибирь</h6>
+                              </div>
+                              <div class="card-body">
+                                <ul class="list-unstyled timeline-card-list"> 
+                                  <li>
+                                    <span class="label">Объем производства:</span>
+                                    <span>1290,1 млн т</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Объем добычи углеводородов:</span>
+                                    <span>1290 млрд м³</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Затраты на геол. изучение:</span>
+                                    <span>305 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Капитальные затраты:</span>
+                                    <span>268 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Ожидаемый ЧДД по&nbsp;портфелю:</span>
+                                    <span>-1 522,5 млн руб.</span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-3">
+                            <div class="card timeline-card-item item-3">
+                              <div class="card-header">
+                                <h6 class="card-title">ВС и ДВ</h6>
+                              </div>
+                              <div class="card-body">
+                                <ul class="list-unstyled timeline-card-list">
+                                  <li>
+                                    <span class="label">Объем производства:</span>
+                                    <span>1290,1 млн т</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Объем добычи углеводородов:</span>
+                                    <span>1290 млрд м³</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Затраты на геол. изучение:</span>
+                                    <span>305 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Капитальные затраты:</span>
+                                    <span>268 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Ожидаемый ЧДД по&nbsp;портфелю:</span>
+                                    <span>-1 522,5 млн руб.</span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-3">
+                            <div class="card timeline-card-item item-4">
+                              <div class="card-header">
+                                <h6 class="card-title">Европейская часть РФ</h6>
+                              </div>
+                              <div class="card-body">
+                                <ul class="list-unstyled timeline-card-list">
+                                  <li>
+                                    <span class="label">Объем производства:</span>
+                                    <span>1290,1 млн т</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Объем добычи углеводородов:</span>
+                                    <span>1290 млрд м³</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Затраты на геол. изучение:</span>
+                                    <span>305 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Капитальные затраты:</span>
+                                    <span>268 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Ожидаемый ЧДД по&nbsp;портфелю:</span>
+                                    <span>-1 522,5 млн руб.</span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+          
+                      <!-- Контент для 2029-2040 -->
+                      <div class="tab-pane fade" id="content-2029-2040" role="tabpanel" aria-labelledby="tab-2029-2040">
+                        <h5>Информация за 2029-2040 годы</h5>
+                        <div class="row">
+                          <div class="col-md-3">
+                            <div class="card timeline-card-item item-1">
+                              <div class="card-header">
+                                <h6 class="card-title">Российская Федерация</h6>
+                              </div>
+                              <div class="card-body">
+                                <ul class="list-unstyled timeline-card-list">
+                                  <li>
+                                    <span class="label">Объем производства:</span>
+                                    <span>1290,1 млн т</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Объем добычи углеводородов:</span>
+                                    <span>1290 млрд м³</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Затраты на геол. изучение:</span>
+                                    <span>305 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Капитальные затраты:</span>
+                                    <span>268 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Ожидаемый ЧДД по&nbsp;портфелю:</span>
+                                    <span>-1 522,5 млн руб.</span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-3">
+                            <div class="card timeline-card-item item-2">
+                              <div class="card-header">
+                                <h6 class="card-title">Западная Сибирь</h6>
+                              </div>
+                              <div class="card-body">
+                                <ul class="list-unstyled timeline-card-list"> 
+                                  <li>
+                                    <span class="label">Объем производства:</span>
+                                    <span>1290,1 млн т</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Объем добычи углеводородов:</span>
+                                    <span>1290 млрд м³</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Затраты на геол. изучение:</span>
+                                    <span>305 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Капитальные затраты:</span>
+                                    <span>268 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Ожидаемый ЧДД по&nbsp;портфелю:</span>
+                                    <span>-1 522,5 млн руб.</span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-3">
+                            <div class="card timeline-card-item item-3">
+                              <div class="card-header">
+                                <h6 class="card-title">ВС и ДВ</h6>
+                              </div>
+                              <div class="card-body">
+                                <ul class="list-unstyled timeline-card-list">
+                                  <li>
+                                    <span class="label">Объем производства:</span>
+                                    <span>1290,1 млн т</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Объем добычи углеводородов:</span>
+                                    <span>1290 млрд м³</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Затраты на геол. изучение:</span>
+                                    <span>305 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Капитальные затраты:</span>
+                                    <span>268 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Ожидаемый ЧДД по&nbsp;портфелю:</span>
+                                    <span>-1 522,5 млн руб.</span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-3">
+                            <div class="card timeline-card-item item-4">
+                              <div class="card-header">
+                                <h6 class="card-title">Европейская часть РФ</h6>
+                              </div>
+                              <div class="card-body">
+                                <ul class="list-unstyled timeline-card-list">
+                                  <li>
+                                    <span class="label">Объем производства:</span>
+                                    <span>1290,1 млн т</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Объем добычи углеводородов:</span>
+                                    <span>1290 млрд м³</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Затраты на геол. изучение:</span>
+                                    <span>305 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Капитальные затраты:</span>
+                                    <span>268 млн руб.</span>
+                                  </li>
+                                  <li>
+                                    <span class="label">Ожидаемый ЧДД по&nbsp;портфелю:</span>
+                                    <span>-1 522,5 млн руб.</span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+  <script src="dist/js/script.js"></script>
+</body>
+</html>
